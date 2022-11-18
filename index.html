@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bustr | Divine</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/share-free-icon-font.png">
+</head>
+<body>
+    <!-- <div class="nav">
+        <ul>
+            <li><a href="#">Marquee</a></li>
+        </ul>
+    </div> -->
+    <section class="container">
+        <div class="form-box">
+            <h1 id="title">Sign Up</h1>
+            <form action="" method="">
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <i class="fa fa-user"></i>
+                        <input type="text" placeholder="Enter your username" name="username">
+                    </div>
+        
+                    <div class="input-field">
+                        <i class="fa fa-envelope"></i>
+                        <input type="email" placeholder="Enter your email" name="email">
+                    </div>
+        
+                    <div class="input-field">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" placeholder="Enter your password" name="password">
+                    </div>
+                    <p>Forgot password? <a href="#" target="">Click Here</a></p>
+                </div>
+            </form>
+            <!-- buttons -->
+            <section class="btn">
+                <div class="button" id="signupBtn">
+                    Sign Up
+                </div>
+                <div class="button disable" id="signinBtn">
+                    Sign In
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <script>
+        let signupBtn = document.getElementById("signupBtn");
+        let signinBtn = document.getElementById("signinBtn");
+        let nameField = document.getElementById("nameField");
+        let title = document.getElementById("title");
+
+        signinBtn.onclick = function(){
+            nameField.style.maxHeight = "0";
+            title.innerHTML = "Sign In";
+            signupBtn.classList.add("disable");
+            signinBtn.classList.remove("disable");
+        }
+
+        signupBtn.onclick = function(){
+            nameField.style.maxHeight = "60px";
+            title.innerHTML = "Sign Up";
+            signupBtn.classList.remove("disable");
+            signinBtn.classList.add("disable");
+        }
+    </script>
+
+<script src="https://use.fontawesome.com/2c38b88d47.js"></script>
+</body>
+</html>
